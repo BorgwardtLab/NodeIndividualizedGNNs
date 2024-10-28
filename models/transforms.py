@@ -28,6 +28,13 @@ class EdgeConstant(BaseTransform):
         return f'{self.__class__.__name__}(value={self.value})'
 
 
+class NodeAttributesToFloat(BaseTransform):
+    def __call__(self, graph: Data):
+        if graph.x is not None:
+            graph.x = graph.x.float()
+        return graph
+        
+
 class ToAbsolute(BaseTransform):
     def __init__(self, dims=1, edge_labels=False):
         self.dims = dims
