@@ -1,0 +1,1 @@
+parallel python main_vcdim.py --ind-type RNI --dataset {1} --train-size {2} --seed {3} ::: 3regular_16 3regular_32 3regular_64 ::: 1 10 100 1000 ::: 0 1 2 3 4

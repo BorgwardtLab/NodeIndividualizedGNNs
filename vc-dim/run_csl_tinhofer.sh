@@ -1,0 +1,1 @@
+parallel python main_vcdim.py --ind-type Tinhofer --dataset {1} --train-size {2} --seed {3} ::: csl_17 csl_41 csl_83 ::: 1 10 100 1000 ::: 0 1 2 3 4
