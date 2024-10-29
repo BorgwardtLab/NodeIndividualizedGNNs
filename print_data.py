@@ -68,3 +68,5 @@ print("%1.3f %1.3f" % (np.mean(out_te), np.std(out_te)))
 print("%1.3f %1.3f" % (np.mean(out_df), np.std(out_df)))
 
 print(r"%.1f \tsmall{%.1f} & %.1f \tsmall{%.1f}" % (np.mean(out_tr)*100, np.std(out_tr)*100, np.mean(out_te)*100, np.std(out_te)*100))
+
+print(r"%.1f \tsmall{%.1f} & %.1f \tsmall{%.1f}" % (np.mean(out_te)*100, np.std(out_te)*100, np.mean(out_df)*100, np.std(out_df)*100))

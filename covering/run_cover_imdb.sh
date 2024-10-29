@@ -13,7 +13,6 @@ do
     python main_cover.py --layers 2 --hidden 128 --ind-type Tinhofer --k-weak 0 --dataset IMDB-BINARY --seed $i
     python main_cover.py --layers 2 --hidden 128 --ind-type Tinhofer --k-weak 9 --dataset IMDB-BINARY --seed $i
     python main_cover.py --layers 2 --hidden 128 --ind-type LPE --dataset IMDB-BINARY --seed $i
-    echo a
 done
 
 python cover.py --ind-type None --layers 5 --dataset IMDB-BINARY
